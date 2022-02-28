@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppJogoDaVelha.MainPage">
+
+    <!-- Row =  Horizontal | Colum = Vertical -->
+    <Grid x:Name="fundo" BackgroundColor="White" RowDefinitions="*, *, *, *, *" ColumnDefinitions="*, *, *">
+
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" x:Name="title" TextColor="#000" FontSize="32" Text="👩🏻‍🦳 Jogo Da Velha" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+
+        <Button x:Name="bnt1" FontSize="64" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="bnt2" FontSize="64" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="bnt3" FontSize="64" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked" />
+        <Button x:Name="bnt4" FontSize="64" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="bnt5" FontSize="64" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="bnt6" FontSize="64" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked" />
+        <Button x:Name="bnt7" FontSize="64" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked" />
+        <Button x:Name="bnt8" FontSize="64" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked" />
+        <Button x:Name="bnt9" FontSize="64" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked" />
+
+        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Black" x:Name="label_vez" FontSize="32" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Text="O JOGADOR X COMEÇA."/>
+        <Button VerticalOptions="CenterAndExpand" HorizontalOptions="Center" x:Name="button_theme" Grid.Row="5" Grid.Column="1" Text="Ativar Black" Clicked="charge_theme" />
+    </Grid>
+
+</ContentPage>
